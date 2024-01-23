@@ -1,17 +1,15 @@
 {
   "name": "git-hooks-nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Git Hooks fundamentals",
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
-    "test": "jest",
-    "lint": "eslint src/**",
     "lint-staged": "lint-staged",
     "success-message": "echo Thanks, $GIT_AUTHOR_NAME, committing is sucessful!"
   },
   "keywords": [],
-  "author": "",
+  "author": "Indigo",
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^18.5.0",
@@ -24,7 +22,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint",
+      "eslint src/**",
       "jest --findRelatedTests --passWithNoTests"
     ]
   },

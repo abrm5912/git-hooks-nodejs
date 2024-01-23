@@ -7,7 +7,8 @@
     "prepare": "husky install",
     "test": "jest",
     "lint": "eslint src/**",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "success-message": "echo Thanks, $GIT_AUTHOR_NAME, committing is sucessful!"
   },
   "keywords": [],
   "author": "",
